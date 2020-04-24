@@ -18,7 +18,7 @@ export class EditItemModalComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  onSubmitted(updatedItem: BudgetItem){
-    this.dialogRef.close(updatedItem);
+  onSubmitted(updateItem: BudgetItem){
+    this.dialogRef.close(updateItem);
   }
 }
