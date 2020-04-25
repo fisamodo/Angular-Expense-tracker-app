@@ -1,10 +1,23 @@
 <div class="page-container">
     <div class="sidebar">
         <div class="list-items">
-            <div class="list-item">This is a test item</div>
-            <div class="list-item">This is a test item</div>
-            <div class="list-item">This is a test item</div>
+            <a routerLink="/budgetCalculator" routerLinkActive="selected" class="list-item">
+                <i class="material-icons">bookmark_border</i>
+                Budget Calculator
+            </a>
+            <a routerLink="/services" routerLinkActive="selected" class="list-item">
+                <i class="material-icons">bookmark_border</i>
+                Something
+            </a>
+            <a routerLink="/something" routerLinkActive="selected" class="list-item">
+                <i class="material-icons">bookmark_border</i>
+                Something
+            </a>
+            
 
         </div>
     </div>
+    <div class="page-content-container">
+    <router-outlet></router-outlet>
+    </div>  
 </div>

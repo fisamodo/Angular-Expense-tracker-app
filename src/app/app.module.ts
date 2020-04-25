@@ -12,6 +12,8 @@ import { EditItemModalComponent } from './edit-item-modal/edit-item-modal.compon
 
 import { MatDialogModule } from '@angular/material/dialog';
 import { TestPageComponent } from './test-page/test-page.component';
+import { SamplePageOneComponent } from './sample-page-one/sample-page-one.component';
+import { SamplePageTwoComponent } from './sample-page-two/sample-page-two.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { TestPageComponent } from './test-page/test-page.component';
     BudgetItemListComponent,
     BudgetItemCardComponent,
     EditItemModalComponent,
-    TestPageComponent
+    TestPageComponent,
+    SamplePageOneComponent,
+    SamplePageTwoComponent
   ],
   imports: [
     BrowserModule,

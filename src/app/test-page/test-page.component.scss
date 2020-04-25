@@ -1,17 +1,75 @@
 .page-container{
+    display:flex;
     height: 100%;
     background: white;
 }
 
+.page-content-container{
+    height: 100%;
+    width: 100%;    
+}
 .sidebar{
     height: 100%;
     width: 300px;
-    background: linear-gradient(75deg, rgb(214,180,247), rgb(173,203,231));
+    background: linear-gradient(90deg,  rgb(173,203,231),rgb(214,180,247));
 
+}
+
+.list-items{
+    padding-top: 100px;
 }
 
 .list-item{
-    font-size:20px;
-    color:white;
-    padding:20px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    font-size:18px;
+    color:rgba(2, 2, 2, 0.4);
+    padding:0px 20;
+    font-family: 'Lato';
+    cursor: pointer;
 }
+
+
+
+.list-item:hover{
+    color: white;
+}
+
+.list-item.selected{
+    color: white;
+}
+
+.list-item::before{
+    content: '';
+    position: absolute;
+    top:0;
+    left:0;
+    height:100%;
+    width: 4px;
+    background-color: salmon;
+
+    /* set opacity to 0 by default */
+    opacity: 0;
+    transform: scaleY(0);
+
+    transition: transform 0.2s, opacity 0.2s
+}
+
+.list-item:hover::before{
+    opacity: 0.35;
+    transform: scaleY(1) scaleX(128);
+}
+
+
+.list-item.selected::before{
+    opacity: 1;
+    transform: scaleY(1);
+
+}
+
+.list-item i.material-icons{
+    margin-right: 12px;
+    font-size: 24px;
+}
+
