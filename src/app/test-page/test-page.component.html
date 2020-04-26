@@ -1,5 +1,11 @@
 <div class="page-container">
-    <div class="sidebar">
+    <div class="SidebarButton" (click)="toggleSidebar($event)">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <div class="sidebar" [ngClass]="{'show': toggle, 'hide' :toggle}">
         <div class="list-items">
             <a routerLink="/budgetCalculator" routerLinkActive="selected" class="list-item">
                 <i class="material-icons">bookmark_border</i>
@@ -19,5 +25,5 @@
     </div>
     <div class="page-content-container">
     <router-outlet></router-outlet>
-    </div>  
+    </div>
 </div>

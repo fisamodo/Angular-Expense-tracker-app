@@ -16,6 +16,7 @@ export class MainPageComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  
 
   addItem(newItem: BudgetItem){
     this.budgetItems.push(newItem);

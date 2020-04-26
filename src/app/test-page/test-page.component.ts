@@ -7,9 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TestPageComponent implements OnInit {
 
+  toggle: boolean = true;
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  toggleSidebar(toggle){
+    this.toggle = !this.toggle;
+  }
+  
+
 }
+
+
+
